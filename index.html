@@ -9,19 +9,22 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <header>
-        <img class="logo" src="./img/logo.png" alt="logo_norion">
-        <nav>
-            <div class="header__nav">
-                <ul>
-                    <li><p>HOME</p></li>
-                    <li><a href="./vistas/pjs.html">PERSONAJES</a></li>
-                    <li><a href="./vistas/razas.html">RAZAS</a></li>
-                    <li><a href="./vistas/facciones.html">FACCIONES</a></li>
-                    <li><a href="./vistas/ubi_embl.html">UBICACIONES EMBLEMATICAS</a></li>
+    <header class="header">
+        <img class="header__logo" src="./img/logo.png" alt="logo_norion">
+        <nav class="header__nav">
+            <div>
+                <ul class="header__nav__ul">
+                    <li class="header__nav__ul__li"><p>HOME</p></li>
+                    <li class="header__nav__ul__li"><a href="./vistas/pjs.html">PERSONAJES</a></li>
+                    <li class="header__nav__ul__li"><a href="./vistas/razas.html">RAZAS</a></li>
+                    <li class="header__nav__ul__li"><a href="./vistas/facciones.html">FACCIONES</a></li>
+                    <li class="header__nav__ul__li"><a href="./vistas/ubi_embl.html">UBICACIONES EMBLEMATICAS</a></li>
                 </ul>
             </div>
         </nav>
+        <span class="header__btn">
+            <i class="fa fa-bars"></i>
+        </span>
     </header>
     <main class="main">
         <section class="main__hero">
@@ -92,6 +95,11 @@
             Watusi Inc. | Tales of Norion™ todos los derechos reservados.
         </p>
         <br>
+        <ul class="socials">
+            <li><a href=""><i class='bx bxl-facebook-circle bx-md'></i></a></li>
+             <li class="socials__inst"><a href=""><i class='bx bxl-instagram bx-md' ></i></a></li>
+             <li><a href=""><i class='bx bxl-twitter bx-md'></i></a></li>
+        </ul>
         <p class="footer__design">
             ©Designed by Agus
         </p>
