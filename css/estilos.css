@@ -389,6 +389,9 @@ hr {
 /* MEDIA QUERIES (ESTILOS MOVILES) */
 
 @media screen and (max-width: 768px) {
+    body {
+    }
+
     /*HEADER*/
     .header {
         background-color: rgba(0,0,0,0.7);
@@ -427,4 +430,54 @@ hr {
     .main__hero {
         padding-top: 6rem;
     }
+
+    .main__hero__sinopsis {
+        display: flex;
+        margin: 1rem 1rem;
+    }
+
+    .main__hero__principales {
+        padding-top: 0.5rem;
+        font-size: 1.5rem;
+    }
+
+    .main__hero__principales {
+        margin: 0 6rem;
+        border-radius: 2rem;
+        border-style: ridge;
+        border-color: goldenrod;
+    }
+
+    .main__hero__principales__tokens {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .main__hero__principales__tokens img {
+        padding-top: 0.5rem;
+    }
+
+    .main__mapa {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__mapa img {
+        align-items: center;
+        width: 35rem;
+        margin: 0;
+    }
+
+    .main__mapa h1 {
+        margin: 0.5rem 7rem;
+        padding: 0.2rem 0;
+        border-radius: 0.8rem;
+    }
+
+    hr {
+        display: none;
+    }
+    /*Fin MAIN*/
 }
