@@ -388,10 +388,7 @@ hr {
 
 /* MEDIA QUERIES (ESTILOS MOVILES) */
 
-@media screen and (max-width: 768px) {
-    body {
-    }
-
+@media screen and (max-width: 425px) {
     /*HEADER*/
     .header {
         background-color: rgba(0,0,0,0.7);
@@ -417,6 +414,15 @@ hr {
         padding: 0.2rem 0;
     }
 
+    .header__nav__ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__nav__ul__li {
+        justify-content: left;
+    }
+
     .header__nav a {
         color: black;
     }
@@ -428,7 +434,7 @@ hr {
 
     /*MAIN*/
     .main__hero {
-        padding-top: 6rem;
+        padding-top: 19.5rem;
     }
 
     .main__hero__sinopsis {
@@ -442,20 +448,27 @@ hr {
     }
 
     .main__hero__principales {
-        margin: 0 6rem;
+        margin: 0 2rem;
         border-radius: 2rem;
         border-style: ridge;
         border-color: goldenrod;
     }
 
     .main__hero__principales__tokens {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows:auto;
         gap: 0;
+        padding: 1rem 0;
+    }
+    
+    .main__hero__principales__tokens img {
+        width: 90%;
+        padding: 0.2rem 0;
     }
 
-    .main__hero__principales__tokens img {
-        padding-top: 0.5rem;
+    .main__hero__principales__tokens p {
+        padding-bottom: 1rem;
     }
 
     .main__mapa {
@@ -466,7 +479,7 @@ hr {
 
     .main__mapa img {
         align-items: center;
-        width: 35rem;
+        width: 25rem;
         margin: 0;
     }
 
