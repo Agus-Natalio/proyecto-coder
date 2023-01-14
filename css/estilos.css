@@ -7,80 +7,53 @@
 body {
     background-image: url(../img/R.jpg);
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 /* Inicio HEADER */
 .header {
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.9);
     width: 100%;
     z-index: 100;
     position: absolute;
 }
 
-.header__nav {
-    float: right;
-    text-align: center;
+.navbar-brand img {
+    width: 9rem;
+    border-radius: 0.5rem;
 }
 
-.header__nav__ul {
-    list-style: none;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-}
-
-.header__nav__ul__li {
-    float: right;
+.nav-link {
+    font-size: 1.2rem;
     font-weight: bold;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    margin: 0.1rem;
-}
-
-.header__nav__ul__li a {
-    display: block;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
+    align-items: gitr;
     color: goldenrod;
-    text-decoration: none;
-
 }
 
-.header__nav__ul__li p {
-    display: block;
-    padding: 1rem;
-    color: white;
-    text-decoration: none;
+.nav-item a:active {
+    color: whitesmoke;
 }
 
-.header__nav__ul__li a:hover {
-    border-radius: 0.25rem;
-    background: whitesmoke;
-    color: black;
+.nav-item a:hover {
+    color: whitesmoke;
 }
 
-.header__logo {
-    margin: auto;
-    width: 8rem;
-    display: block;
-    float: left;
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-}
-
-.header__btn {
-    margin-right: 1.8rem;
-    font-size: 1.5rem;
-    color: goldenrod;
-    cursor: pointer;
-    display: none;
+.navbar-toggler {
+    background-color: goldenrod;
+    border-color: gray;
 }
 
 /* Fin HEADER */
 
 /* Inicio MAIN */
 
+.main {
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .main__hero__frente {
-    width: 26rem;
-    margin-top: 4rem;
+    width: 30rem;
+    margin-top: 6.4rem;
     border-radius: 0.5rem;
     border-color: goldenrod;
     border-style: ridge;
@@ -107,14 +80,24 @@ body {
 }
 
 .main__hero__principales__tokens {
-    color: wheat;
     display: flex;
     justify-content: center;
-    padding: 1rem 0;
     gap: 5rem;
+}
+
+.main__hero__principales__tokens img {
+    padding-bottom: 0.5rem;
+}
+
+.main__hero__principales__tokens p {
     font-size: medium;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
+    color: wheat;
+    background-color: black;
+    border-style: ridge;
+    border-radius: 0.5rem;
+    border-color: goldenrod;
 }
 
 hr {
@@ -123,18 +106,34 @@ hr {
     width: 100%;
 }
 
+.main__mapa {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.main__mapa__container {
+    padding-top: 1rem;
+}
+
 .main__mapa__img {
+    align-items: center;
     width: 50rem;
-    margin: 1rem 35rem;
-    border-radius: 0.8rem;
-    border-color: goldenrod;
+    margin: 0;
+    border-radius: 1.5rem;
     border-style: ridge;
+    border-color: goldenrod;
 }
 
 .main__mapa h1 {
+    border-style: ridge;
+    border-color: goldenrod;
+    border-radius: 1rem;
     background-color: rgba(0,0,0,0.8);
     color: goldenrod;
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .bx-up-arrow-alt {
@@ -353,11 +352,15 @@ hr {
     color: white;
     text-align: center;
     width: 100%;
-    padding: 0.25rem 0 0 0;
+    padding-top: 0.25rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.footer p {
+    margin-bottom: 0;
 }
 
 .socials {
@@ -366,6 +369,7 @@ hr {
     align-items: center;
     justify-content: center;
     margin-bottom: 0.2rem;
+    padding: 0;
   }
   .socials li {
     margin: 0 10px;
@@ -390,51 +394,16 @@ hr {
 
 @media screen and (max-width: 425px) {
     /*HEADER*/
-    .header {
-        background-color: rgba(0,0,0,0.7);
-        width: 100%;
-        z-index: 100;
-        position: absolute;
-    }
 
-    .header__logo {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        float: none;
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-        border-radius: 0.5rem;
-        width: 9.5rem;
-    }
-
-    .header__nav {
-        float: none;
-        background-color:rgba(193,155,40,0.7);
-        padding: 0.2rem 0;
-    }
-
-    .header__nav__ul {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .header__nav__ul__li {
-        justify-content: left;
-    }
-
-    .header__nav a {
-        color: black;
-    }
-
-    .header__nav a:hover {
-        color: goldenrod;
-    }
     /*FIN HEADER*/
 
     /*MAIN*/
     .main__hero {
-        padding-top: 19.5rem;
+        padding-top: ;
+    }
+
+    .main__hero__frente {
+        width: 22rem;
     }
 
     .main__hero__sinopsis {
@@ -462,13 +431,21 @@ hr {
         padding: 1rem 0;
     }
     
+    .main__hero__principales__tokens__dorus {
+        align-content: center;
+    }
+
+    .main__hero__principales__tokens h1 {
+        margin-bottom: 0;
+    }
+
     .main__hero__principales__tokens img {
         width: 90%;
-        padding: 0.2rem 0;
+        padding: 0.5rem 0;
     }
 
     .main__hero__principales__tokens p {
-        padding-bottom: 1rem;
+        margin: 0 0.5rem;
     }
 
     .main__mapa {
