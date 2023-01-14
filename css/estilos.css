@@ -189,6 +189,46 @@ hr {
     padding-right: 0.5rem;
 }
 
+.accordion-item {
+    margin: 0 13rem;
+    border-color: goldenrod;
+}
+
+.accordion-button {
+    background-color: rgba(0,0,0,0.8);
+    border-color: goldenrod;
+}
+
+.accordion-button p {
+    margin: 0;
+    color: goldenrod;
+    font-size: 4rem;
+    padding-left: 2rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: rgba(0,0,0,0.9);
+}
+
+.accordion-button::after {
+    background-color: goldenrod;
+    border-radius: 0.5rem;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+} 
+
+.accordion img {
+    width: 8rem;
+}
+
+.accordion-body {
+    color: white;
+    background-color: gray;
+}
+
 .main__side__pjs__char {
     margin: 0 10rem;
     border-radius: 0.5rem;
@@ -430,7 +470,7 @@ hr {
         gap: 0;
         padding: 1rem 0;
     }
-    
+
     .main__hero__principales__tokens__dorus {
         align-content: center;
     }
