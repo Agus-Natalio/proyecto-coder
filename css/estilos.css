@@ -26,9 +26,12 @@ body {
 .nav-link {
     font-size: 1.2rem;
     font-weight: bold;
-    padding: 0.5rem 1rem;
     align-items: gitr;
     color: goldenrod;
+}
+
+.nav-item {
+    padding-left: 1.5rem;
 }
 
 a {
@@ -229,7 +232,7 @@ hr {
 
 .accordion-button::after {
     background-color: goldenrod;
-    border-radius: 0.5rem;
+    border-radius: 0.6rem;
 }
 
 .accordion-button:focus {
