@@ -90,12 +90,18 @@ a {
     padding: 1rem;
     border-radius: 1rem;
     font-size: 1.2rem;
+	-webkit-animation: scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .main__hero__principales {
-    color: goldenrod;
     background-color: rgba(0,0,0,0.8);
     margin-top: 1rem;
+}
+
+.main__hero__principales h1 {
+    font-weight: bold;
+    color: goldenrod;
 }
 
 .main__hero__principales__tokens {
@@ -104,8 +110,10 @@ a {
     gap: 5rem;
 }
 
-.main__hero__principales__tokens img {
+.main__hero__principales__tokens__img {
     padding-bottom: 0.5rem;
+	-webkit-animation: roll-in-left 1s ease-out both;
+	animation: roll-in-left 1s ease-out both;
 }
 
 .main__hero__principales__tokens p {
@@ -142,6 +150,8 @@ hr {
     border-radius: 1.5rem;
     border-style: ridge;
     border-color: goldenrod;
+    -webkit-animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 .main__mapa h1 {
@@ -151,6 +161,7 @@ hr {
     background-color: rgba(0,0,0,0.8);
     color: goldenrod;
     text-align: center;
+    font-weight: bold;
 }
 
 .bx-up-arrow-alt {
@@ -359,57 +370,62 @@ hr {
 
 .main__form {
     margin: 0 10rem;
-    padding-top: 3rem;
+    padding: 8rem 6rem 2rem 6rem;
     background-color: rgba(90, 90, 90, 0.9);
 }
 
-.main__form__contenedor {
-    padding: 0 60rem 0 8rem;
+.p-5 {
+    padding: 4rem!important;
 }
 
-.form-floating {
-    border: solid #efb810 0.1rem;
+.fondoForm {
+    background-color: white;
+    margin: 0 3rem;
+}
+
+.main__form .form-control {
+    border: 1.5px solid goldenrod;
+}
+
+.col {
+    display: flex;
+    align-content: center;
+}
+
+.fondoForm h1 {
+    color: goldenrod;
+    padding-bottom: 1rem;
+    font-weight: bolder;
+}
+
+.form-btn {
+    background-color: rgba(128, 0, 64, 1);
+    border-color: rgba(128, 0, 64, 1);
+    color: goldenrod;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    margin-top: 1rem;
+    padding: 0.5rem 10rem;
+}
+
+.form-btn:hover {
+    background-color: goldenrod;
+    border-color: goldenrod;
+    color: rgba(128, 0, 64, 1);
+    transition: 0.3s;
+}
+
+.fondoForm__side__p {
+    color: goldenrod;
+    padding: 2.5rem 2.5rem;
+    font-weight: bold;
+    border: solid 1px goldenrod;
     border-radius: 0.5rem;
 }
 
-.main__ubi h1 {
-    color: goldenrod;
-    font-size: 2.5rem;
-    text-align: center;
-    text-decoration: underline;
-    padding: 2rem;
-}
-
-.main__ubi img {
-    object-fit: cover;
-    height: 32rem;
-    width: 50rem;
-}
-
-.main__ubi__hero {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
-    background-color: rgba(90, 90, 90, 0.7);
-}
-
-.main__ubi__hero__content {
-    padding: 1rem;
-    justify-content: center;
-}
-
-.main__ubi__hero__content h2 {
-    font-size: 2rem;
-    text-align: center;
-    color: goldenrod;
-    text-decoration: underline;
-}
-
-.main__ubi__hero__content p {
-    color: wheat;
-    font-size: 1.5rem;
-    text-align: justify;
-    padding: 0.5rem;
+.fondoForm__side img {
+    border-radius: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 /* Inicio FOOTER */
@@ -450,14 +466,14 @@ hr {
     transition: color .4s ease;
   }
   .socials a:hover i{
-    color: white;
+    color: rgba(128, 0, 64, 1);
   }
 
 .footer__design {
     position: center;
 }
 
-/* MEDIA QUERIES (ESTILOS MOVILES) */
+/* MEDIA QUERIES (ESTILOS MOVILES) HASTA 425px */
 
 @media screen and (max-width: 425px) {
     /*HEADER*/
@@ -542,3 +558,140 @@ hr {
     }
     /*Fin MAIN*/
 }
+
+/* MEDIA QUERIES (ESTILOS MOVILES) HASTA 375px */
+
+@media screen and (max-width: 375px) {
+      /*INICIO MAIN*/
+    .main__hero__principales {
+        margin: 0 0.8rem;
+        border-radius: 1.5rem;
+    }
+
+    .main__hero__principales__tokens img {
+        width: 75%;
+    }
+
+    .main__mapa img {
+        width: 22rem;
+    }
+}
+
+/* MEDIA QUERIES (ESTILOS MOVILES) HASTA 320px */
+
+@media screen and (max-width: 320px) {
+
+      /*INICIO MAIN*/
+    .main__hero__frente {
+        width: 19.5rem;
+    }
+
+    .main__hero__principales {
+        border-radius: 1rem;
+    }
+
+    .main__hero__principales__tokens {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .main__hero__principales__tokens img {
+        width: 80%;
+    }
+
+    .main__hero__principales__tokens p {
+        margin: 0 1.5rem;
+    }
+
+    .main__mapa h1 {
+        margin: 0.5rem 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    .main__mapa img {
+        width: 19.5rem;
+    }
+      /*FIN MAIN*/
+}
+
+    /* KEYFRAMES */
+    @-webkit-keyframes roll-in-left {
+        0% {
+          -webkit-transform: translateX(-800px) rotate(-540deg);
+                  transform: translateX(-800px) rotate(-540deg);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateX(0) rotate(0deg);
+                  transform: translateX(0) rotate(0deg);
+          opacity: 1;
+        }
+      }
+      @keyframes roll-in-left {
+        0% {
+          -webkit-transform: translateX(-800px) rotate(-540deg);
+                  transform: translateX(-800px) rotate(-540deg);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateX(0) rotate(0deg);
+                  transform: translateX(0) rotate(0deg);
+          opacity: 1;
+        }
+    }
+    
+    @-webkit-keyframes scale-in-center {
+        0% {
+          -webkit-transform: scale(0);
+                  transform: scale(0);
+          opacity: 1;
+        }
+        100% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+          opacity: 1;
+        }
+      }
+      @keyframes scale-in-center {
+        0% {
+          -webkit-transform: scale(0);
+                  transform: scale(0);
+          opacity: 1;
+        }
+        100% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+          opacity: 1;
+        }
+      }   
+    
+    @-webkit-keyframes fade-in-top {
+        0% {
+          -webkit-transform: translateY(-50px);
+                  transform: translateY(-50px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateY(0);
+                  transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      @keyframes fade-in-top {
+        0% {
+          -webkit-transform: translateY(-50px);
+                  transform: translateY(-50px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateY(0);
+                  transform: translateY(0);
+          opacity: 1;
+        }
+      }
+}
+
+
+
+      
