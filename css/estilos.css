@@ -611,6 +611,23 @@ hr {
         margin: 0;
         width: 26.6rem;
     }
+
+    .main__faction {
+        margin: 0;
+    }
+
+    .main__faction__hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main__faction__hero {
+        padding: 0;
+    }
+
+    .main__faction__hero__content {
+        padding: 0;
+    }
     /*Fin MAIN*/
 }
 
@@ -646,6 +663,11 @@ hr {
 
     .races__carrusel {
         width: 23.45rem;
+    }
+
+    .main__faction__hero__content img {
+        width: 18rem;
+        height: 12rem;
     }
 }
 
@@ -712,6 +734,11 @@ hr {
 
     .races__carrusel {
         width: 20rem;
+    }
+
+    .main__faction__hero__content img {
+        width: 16rem;
+        height: 10rem;
     }
       /*FIN MAIN*/
 }
