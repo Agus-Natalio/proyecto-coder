@@ -294,24 +294,32 @@ hr {
     padding: 1rem 10rem;
 }
 
-.main__side__races__content {
-    padding: 1rem 8rem;
+.races__carrusel {
+    width: 75rem;
+    background-size: cover;
+    margin: 1rem 10rem;
 }
 
-.main__side__races__content h2 {
-    color: goldenrod;
-    padding-bottom: 0.5rem;
+.races__carrusel__altura {
+    height: 60vh;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 }
 
-.main__side__races__content p{
+.races__carrusel__text {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.7);
+    padding: 3vh 5vh;
+}
+
+.races__carrusel__text h2 {
+    color: #efb810;
+    font-weight: bold;
+}
+
+.races__carrusel__text p {
     color: wheat;
-    font-size: 1.15rem;
-}
-
-.main__side__races__content img {
-    width: 25rem;
-    height: 15rem;
-    border-radius: 0.75rem;
 }
 
 .main__faction {
@@ -589,6 +597,20 @@ hr {
         font-size: 2.8rem;
         padding-left: 1.5rem;
     }
+
+    .main__side__hero__racecont__img {
+        width: 24rem;
+        border-radius: 1rem;
+    }
+
+    .main__side__hero__racecont p {
+        padding: 0.5rem 1rem;     
+    }
+
+    .races__carrusel {
+        margin: 0;
+        width: 26.6rem;
+    }
     /*Fin MAIN*/
 }
 
@@ -616,6 +638,14 @@ hr {
     .accordion-button p {
         font-size: 2.5rem;
         padding-left: 1.5rem;
+    }
+
+    .main__side__hero__racecont__img {
+        width: 21.5rem;
+    }
+
+    .races__carrusel {
+        width: 23.45rem;
     }
 }
 
@@ -673,6 +703,15 @@ hr {
     .accordion-button p {
         font-size: 1.8rem;
         padding-left: 1.5rem;
+    }
+
+    .main__side__hero__racecont__img {
+        width: 18rem;
+        border-radius: 0.7rem;
+    }
+
+    .races__carrusel {
+        width: 20rem;
     }
       /*FIN MAIN*/
 }
