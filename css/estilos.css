@@ -196,6 +196,7 @@ hr {
     text-decoration: underline;
     text-align: center;
     padding-top: 1rem;
+    font-weight: bold;
 }
 
 .main__side__hero__container {
@@ -321,31 +322,32 @@ hr {
 
 .main__faction h1 {
     color: goldenrod;
-    font-size: 2.5rem;
+    font-size: 3rem;
+    font-weight: bold;
     text-align: center;
     text-decoration: underline;
-    padding: 2rem;
+    padding-top: 3rem;
 }
 
 .main__faction__hero {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(3,1fr);
     padding: 1rem 3rem;
 }
 
 .main__faction__hero__content {
-    display: grid;
-    place-items: center;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: rgba(90, 90, 90, 0.7);
     border-radius: 1rem;
     border-style: ridge;
     border-color: goldenrod;
     padding: 0 4rem;
+    margin: 0.5rem;
 }
 
-.main__faction__hero img {
+.main__faction__hero__content img {
     width: 20rem;
     height: 15rem;
     margin: 1rem 0;
@@ -356,6 +358,7 @@ hr {
 
 .main__faction__hero h2 {
     font-size: 1.5rem;
+    font-weight: bold;
     padding: 0.5rem;
     color: goldenrod;
     text-decoration: underline;
@@ -390,6 +393,10 @@ hr {
 .col {
     display: flex;
     align-content: center;
+}
+
+.textArea {
+    height: 109px;
 }
 
 .fondoForm h1 {
@@ -556,6 +563,32 @@ hr {
     hr {
         display: none;
     }
+
+    .main__side {
+        margin: 0;
+    }
+
+    .main__side__hero h1 {
+        font-size: 2.1rem;
+    }
+
+    .main__side__hero__container {
+        padding: 1rem;
+    }
+
+    .main__side__hero__img {
+        width: 15rem;
+        height: 12rem;
+    }
+
+    .accordion-item {
+        margin: 0 0.5rem;
+    }
+
+    .accordion-button p {
+        font-size: 2.8rem;
+        padding-left: 1.5rem;
+    }
     /*Fin MAIN*/
 }
 
@@ -574,6 +607,15 @@ hr {
 
     .main__mapa img {
         width: 22rem;
+    }
+
+    .accordion img {
+        width: 6.5rem;
+    }
+
+    .accordion-button p {
+        font-size: 2.5rem;
+        padding-left: 1.5rem;
     }
 }
 
@@ -597,7 +639,7 @@ hr {
     }
 
     .main__hero__principales__tokens img {
-        width: 80%;
+        width: 70%;
     }
 
     .main__hero__principales__tokens p {
@@ -611,6 +653,26 @@ hr {
 
     .main__mapa img {
         width: 19.5rem;
+    }
+
+    .main__side__hero__img {
+        float: none;
+        width: 17rem;
+    }
+
+    .main__side__hero p {
+        padding-top: 1rem;
+        padding-right: 0;
+        font-size: 1rem;
+    }
+
+    .accordion img {
+        width: 5.5rem;
+    }
+
+    .accordion-button p {
+        font-size: 1.8rem;
+        padding-left: 1.5rem;
     }
       /*FIN MAIN*/
 }
@@ -690,8 +752,5 @@ hr {
           opacity: 1;
         }
       }
-}
-
-
-
+    }
       
