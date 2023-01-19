@@ -628,6 +628,12 @@ hr {
     .main__faction__hero__content {
         padding: 0;
     }
+
+    .main__form {
+        padding: 1rem;
+        background-color: white;
+        margin: 0;
+    }
     /*Fin MAIN*/
 }
 
