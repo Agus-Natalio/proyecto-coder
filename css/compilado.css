@@ -1,8 +1,103 @@
-* {
-  font-family: 'Montserrat', sans-serif;
-  margin: 0;
-  /* El "*" engloba a todo el documento, esos parametros son los necesarios para el reset */
-  padding: 0;
-  box-sizing: border-box; }
+/****header****/
+.header {
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%; }
+  .header__nav img {
+    width: 9rem;
+    border-radius: 0.5rem; }
+    .header__nav img__toggler {
+      background-color: goldenrod;
+      border: solid darkslategrey; }
+    .header__nav img__cont {
+      padding-left: 1.5rem; }
+      .header__nav img__cont a:hover {
+        color: wheat; }
+      .header__nav img__cont__link {
+        font-size: 1.2rem;
+        font-weight: bold;
+        align-items: gitr;
+        color: goldenrod; }
+  .header a {
+    text-decoration: none; }
 
-/*HICISTE TODO MAL JAIRO*/
+.btn {
+  margin: 0.1rem 2rem 0 8rem;
+  background-color: #800040;
+  border-color: #800040;
+  border-radius: 1.5rem; }
+  .btn:hover {
+    background-color: #efb810;
+    border-color: #efb810; }
+  .btn a:hover {
+    color: #800040;
+    transition: 0.3s; }
+  .btn a {
+    color: white;
+    font-weight: bold; }
+
+/****hero****/
+.main__hero {
+  text-align: center; }
+  .main__hero__frente {
+    width: 30rem;
+    margin-top: 6.4rem;
+    border-radius: 0.5rem;
+    border-color: goldenrod;
+    border-style: ridge; }
+  .main__hero__sinopsis {
+    color: wheat;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 1rem 24rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    -webkit-animation: scale-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: scale-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+  .main__hero__principales {
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-top: 1rem; }
+    .main__hero__principales h1 {
+      font-weight: bold;
+      color: goldenrod; }
+    .main__hero__principales__tokens {
+      display: flex;
+      justify-content: center;
+      gap: 5rem; }
+      .main__hero__principales__tokens__img {
+        padding-bottom: 0.5rem;
+        -webkit-animation: roll-in-left 1s ease-out both;
+        animation: roll-in-left 1s ease-out both; }
+      .main__hero__principales__tokens p {
+        font-size: medium;
+        font-weight: bold;
+        color: wheat;
+        background-color: black;
+        border-style: ridge;
+        border-radius: 0.5rem;
+        border-color: goldenrod; }
+
+/****mapa****/
+.main__mapa {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap; }
+  .main__mapa__container {
+    padding-top: 1rem; }
+  .main__mapa__img {
+    align-items: center;
+    width: 50rem;
+    margin: 0;
+    border-radius: 1.5rem;
+    border-style: ridge;
+    border-color: goldenrod;
+    -webkit-animation: fade-in-top 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: fade-in-top 1s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
+  .main__mapa h1 {
+    border-style: ridge;
+    border-color: goldenrod;
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: goldenrod;
+    text-align: center;
+    font-weight: bold; }

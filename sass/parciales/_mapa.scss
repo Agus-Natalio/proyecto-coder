@@ -1,0 +1,31 @@
+/****mapa****/
+.main__mapa {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    &__container {
+        padding-top: 1rem;
+    }
+    &__img {
+        align-items: center;
+        width: 50rem;
+        margin: 0;
+        border-radius: 1.5rem;
+        border-style: ridge;
+        border-color: goldenrod;
+        -webkit-animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+    & h1 {
+        border-style: ridge;
+        border-color: goldenrod;
+        border-radius: 1rem;
+        background-color: rgba(0,0,0,0.8);
+        color: goldenrod;
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
+

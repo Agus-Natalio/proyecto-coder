@@ -1,0 +1,55 @@
+/****header****/
+.header {
+    background-color: rgba(0,0,0,0.9);
+    width: 100%;
+    &__nav img {
+        width: 9rem;
+        border-radius: 0.5rem;
+        &__toggler {
+            background-color: goldenrod;
+            border: solid darkslategrey;
+        }
+        &__cont {
+            padding-left: 1.5rem;
+            & a:hover {
+                color: wheat;
+            }
+            &__link {
+                font-size: 1.2rem;
+                font-weight: bold;
+                align-items: gitr;
+                color: goldenrod;
+            }
+        }
+    }
+    a {
+        text-decoration: none;
+    }
+}
+.btn {
+    margin: 0.1rem 2rem 0 8rem;
+    background-color: rgba(128, 0, 64, 1);
+    border-color: rgba(128, 0, 64, 1);
+    border-radius: 1.5rem;
+    &:hover {
+        background-color: #efb810;
+        border-color: #efb810;
+    }
+    & a:hover {
+        color: rgba(128, 0, 64, 1);
+        transition: 0.3s;
+    }
+    & a {
+        color: white;
+        font-weight: bold;
+    }
+}
+
+
+
+
+
+
+
+
+
