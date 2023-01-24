@@ -1,0 +1,47 @@
+/****side****/
+.main__side {
+    background-color: rgba(0,0,0,0.8);
+    margin: 0 10rem;
+    &__hero__container {
+        position: relative;
+        display: inline-block;
+        padding: 1rem 10rem;
+    }
+    &__hero h1 {
+        color: goldenrod;
+        text-decoration: underline;
+        text-align: center;
+        padding-top: 1rem;
+        font-weight: bold;
+    }
+    &__hero__img {
+        width: 25rem;
+        border-radius: 1rem;
+        float: right;
+        margin-left: 0.5rem;
+        border-style: ridge;
+        border-color: goldenrod;
+    }
+    &__hero p {
+        color: wheat;
+        font-size: 1.2rem;
+        padding-right: 0.5rem;
+    }
+    &__hero__racecont {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0;
+        &__img {
+            width: 50rem;
+            margin: 1rem 0;
+            border-radius: 1.5rem;
+            border-style: ridge;
+            border-color: goldenrod;
+        }
+        & p {
+            padding: 1rem 10rem;
+        }
+    }
+}

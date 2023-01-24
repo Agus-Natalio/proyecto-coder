@@ -1,0 +1,55 @@
+/****faction****/
+.main__faction {
+    margin: 0 10rem;
+    background-color: rgba(0,0,0,0.8);
+    & h1 {
+        color: goldenrod;
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: underline;
+        padding-top: 1rem;
+    }
+    &__hero {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 1rem 3rem;
+        & h2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 0.5rem;
+            color: goldenrod;
+            text-decoration: underline;
+        }
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(90, 90, 90, 0.7);
+            border-radius: 1rem;
+            border-style: ridge;
+            border-color: goldenrod;
+            padding: 0 4rem;
+            margin: 0.5rem;
+            & img {
+                width: 20rem;
+                height: 15rem;
+                margin: 1rem 0;
+                border-radius: 1rem;
+                border-style: ridge;
+                border-color: goldenrod;
+            }
+            & p {
+                color: wheat;
+                font-size: 1.15rem;
+                text-align: justify;
+                padding: 0 0.5rem 0.5rem 0.5rem;
+            }
+        }
+    }
+}
+
+
+
+
+

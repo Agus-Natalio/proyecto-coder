@@ -1,0 +1,38 @@
+/****pjs****/
+.main__pjs__acordeon img {
+    width: 8rem;
+}
+
+.main__pjs__acordeon__cont {
+    margin: 0 13rem;
+    border-color: goldenrod;
+    &__btn {
+        background-color: rgba(0,0,0,0.8);
+        border-color: goldenrod;
+        & p {
+            margin: 0;
+            color: goldenrod;
+            font-size: 3rem;
+            padding-left: 2rem;
+        }
+        &:not(.collapsed) {
+            background-color: rgba(0,0,0,0.9);
+        }
+        &::after {
+            background-color: goldenrod;
+            border-radius: 0.6rem;
+        }
+        &:focus {
+            box-shadow: none;
+        } 
+        &__body {
+            color: white;
+            background-color: gray;
+        }
+    }
+}
+
+
+
+
+

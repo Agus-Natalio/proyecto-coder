@@ -46,6 +46,29 @@
         }
     }
 }
+hr {
+    background-color: goldenrod;
+    height: 5px;
+    width: 100%;
+}
+.bx-up-arrow-alt {
+    background-color: rgba(128, 0, 64, 1);
+    color: goldenrod;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    opacity: 0.7;
+    &:hover {
+        opacity: 1;
+    }
+}
+:root { 
+    scroll-behavior: smooth; 
+}
+
 
 
 

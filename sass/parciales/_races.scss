@@ -1,0 +1,27 @@
+/****races****/
+.races__carrusel {
+    width: 75rem;
+    background-size: cover;
+    margin: 1rem 10rem;
+    &__altura {
+        height: 60vh;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0,0,0,0.7);
+        padding: 3vh 5vh;
+        & h2 {
+            color: #efb810;
+            font-weight: bold;
+        }
+        & p {
+            color: wheat;
+        }
+    }
+}
+
+
+

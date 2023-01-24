@@ -76,6 +76,27 @@
         border-radius: 0.5rem;
         border-color: goldenrod; }
 
+hr {
+  background-color: goldenrod;
+  height: 5px;
+  width: 100%; }
+
+.bx-up-arrow-alt {
+  background-color: #800040;
+  color: goldenrod;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  opacity: 0.7; }
+  .bx-up-arrow-alt:hover {
+    opacity: 1; }
+
+:root {
+  scroll-behavior: smooth; }
+
 /****mapa****/
 .main__mapa {
   display: flex;
@@ -101,3 +122,213 @@
     color: goldenrod;
     text-align: center;
     font-weight: bold; }
+
+/****side****/
+.main__side {
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 0 10rem; }
+  .main__side__hero__container {
+    position: relative;
+    display: inline-block;
+    padding: 1rem 10rem; }
+  .main__side__hero h1 {
+    color: goldenrod;
+    text-decoration: underline;
+    text-align: center;
+    padding-top: 1rem;
+    font-weight: bold; }
+  .main__side__hero__img {
+    width: 25rem;
+    border-radius: 1rem;
+    float: right;
+    margin-left: 0.5rem;
+    border-style: ridge;
+    border-color: goldenrod; }
+  .main__side__hero p {
+    color: wheat;
+    font-size: 1.2rem;
+    padding-right: 0.5rem; }
+  .main__side__hero__racecont {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0; }
+    .main__side__hero__racecont__img {
+      width: 50rem;
+      margin: 1rem 0;
+      border-radius: 1.5rem;
+      border-style: ridge;
+      border-color: goldenrod; }
+    .main__side__hero__racecont p {
+      padding: 1rem 10rem; }
+
+/****pjs****/
+.main__pjs__acordeon img {
+  width: 8rem; }
+
+.main__pjs__acordeon__cont {
+  margin: 0 13rem;
+  border-color: goldenrod; }
+  .main__pjs__acordeon__cont__btn {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-color: goldenrod; }
+    .main__pjs__acordeon__cont__btn p {
+      margin: 0;
+      color: goldenrod;
+      font-size: 3rem;
+      padding-left: 2rem; }
+    .main__pjs__acordeon__cont__btn:not(.collapsed) {
+      background-color: rgba(0, 0, 0, 0.9); }
+    .main__pjs__acordeon__cont__btn::after {
+      background-color: goldenrod;
+      border-radius: 0.6rem; }
+    .main__pjs__acordeon__cont__btn:focus {
+      box-shadow: none; }
+    .main__pjs__acordeon__cont__btn__body {
+      color: white;
+      background-color: gray; }
+
+/****races****/
+.races__carrusel {
+  width: 75rem;
+  background-size: cover;
+  margin: 1rem 10rem; }
+  .races__carrusel__altura {
+    height: 60vh;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem; }
+  .races__carrusel__text {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 3vh 5vh; }
+    .races__carrusel__text h2 {
+      color: #efb810;
+      font-weight: bold; }
+    .races__carrusel__text p {
+      color: wheat; }
+
+/****faction****/
+.main__faction {
+  margin: 0 10rem;
+  background-color: rgba(0, 0, 0, 0.8); }
+  .main__faction h1 {
+    color: goldenrod;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 1rem; }
+  .main__faction__hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem 3rem; }
+    .main__faction__hero h2 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      padding: 0.5rem;
+      color: goldenrod;
+      text-decoration: underline; }
+    .main__faction__hero__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba(90, 90, 90, 0.7);
+      border-radius: 1rem;
+      border-style: ridge;
+      border-color: goldenrod;
+      padding: 0 4rem;
+      margin: 0.5rem; }
+      .main__faction__hero__content img {
+        width: 20rem;
+        height: 15rem;
+        margin: 1rem 0;
+        border-radius: 1rem;
+        border-style: ridge;
+        border-color: goldenrod; }
+      .main__faction__hero__content p {
+        color: wheat;
+        font-size: 1.15rem;
+        text-align: justify;
+        padding: 0 0.5rem 0.5rem 0.5rem; }
+
+/****form****/
+.main__form {
+  margin: 0 10rem;
+  padding: 2.25rem 6rem 2.25rem 6rem;
+  background-color: rgba(90, 90, 90, 0.9); }
+  .main__form .form-control {
+    border: 1.5px solid goldenrod; }
+  .main__form__textArea {
+    height: 109px; }
+  .main__form__fondo {
+    background-color: white;
+    margin: 0 3rem; }
+    .main__form__fondo h1 {
+      color: goldenrod;
+      padding-bottom: 1rem;
+      font-weight: bolder; }
+    .main__form__fondo__side__p {
+      color: goldenrod;
+      padding: 2.5rem 2.5rem;
+      font-weight: bold;
+      border: solid 1px goldenrod;
+      border-radius: 0.5rem; }
+    .main__form__fondo__side img {
+      border-radius: 1.5rem;
+      margin-top: 1.5rem; }
+
+.form-btn {
+  background-color: #800040;
+  border-color: #800040;
+  color: goldenrod;
+  font-weight: bold;
+  border-radius: 0.3rem;
+  margin-top: 1rem;
+  padding: 0.5rem 10rem; }
+  .form-btn:hover {
+    background-color: goldenrod;
+    border-color: goldenrod;
+    color: #800040;
+    transition: 0.3s; }
+
+.col {
+  display: flex;
+  align-content: center; }
+
+.p-5 {
+  padding: 4rem !important; }
+
+/****footer****/
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding-top: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .footer p {
+    margin-bottom: 0; }
+  .footer__socials {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.2rem;
+    padding: 0; }
+    .footer__socials li {
+      margin: 0 10px; }
+    .footer__socials a i {
+      font-size: 1.1rem;
+      color: goldenrod; }
+    .footer__socials a:hover i {
+      font-size: 1.5rem;
+      transition: color .4s ease; }
+    .footer__socials a:hover i {
+      color: #800040; }
+  .footer__design {
+    position: center; }

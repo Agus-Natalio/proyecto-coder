@@ -178,7 +178,9 @@ hr {
     opacity: 1;
 }
 
-:root { scroll-behavior: smooth; }
+:root { 
+    scroll-behavior: smooth; 
+}
 
 .main__side {
     background-color: rgba(0,0,0,0.8);
@@ -214,58 +216,43 @@ hr {
     padding-right: 0.5rem;
 }
 
-.accordion-item {
+.main__pjs__acordeon img {
+    width: 8rem;
+}
+
+.main__pjs__acordeon__cont {
     margin: 0 13rem;
     border-color: goldenrod;
 }
 
-.accordion-button {
+.main__pjs__acordeon__cont__btn {
     background-color: rgba(0,0,0,0.8);
     border-color: goldenrod;
 }
 
-.accordion-button p {
+.main__pjs__acordeon__cont__btn p {
     margin: 0;
     color: goldenrod;
     font-size: 3rem;
     padding-left: 2rem;
 }
 
-.accordion-button:not(.collapsed) {
+.main__pjs__acordeon__cont__btn:not(.collapsed) {
     background-color: rgba(0,0,0,0.9);
 }
 
-.accordion-button::after {
+.main__pjs__acordeon__cont__btn::after {
     background-color: goldenrod;
     border-radius: 0.6rem;
 }
 
-.accordion-button:focus {
+.main__pjs__acordeon__cont__btn:focus {
     box-shadow: none;
 } 
 
-.accordion img {
-    width: 8rem;
-}
-
-.accordion-body {
+.main__pjs__acordeon__cont__body {
     color: white;
     background-color: gray;
-}
-
-.main__side__pjs__char {
-    margin: 0 10rem;
-    border-radius: 0.5rem;
-}
-
-.main__side__pjs__char__img {
-    float: left;
-    padding-right: 0.5rem;
-}
-
-.main__side__pjs__char__bio  {
-    color: wheat;
-    padding: 1rem 0;
 }
 
 .main__side__hero__racecont {
@@ -382,7 +369,7 @@ hr {
     padding: 4rem!important;
 }
 
-.fondoForm {
+.main__form__fondo {
     background-color: white;
     margin: 0 3rem;
 }
@@ -396,14 +383,27 @@ hr {
     align-content: center;
 }
 
-.textArea {
+.main__form__textArea {
     height: 109px;
 }
 
-.fondoForm h1 {
+.main__form__fondo h1 {
     color: goldenrod;
     padding-bottom: 1rem;
     font-weight: bolder;
+}
+
+.main__form__fondo__side__p {
+    color: goldenrod;
+    padding: 2.5rem 2.5rem;
+    font-weight: bold;
+    border: solid 1px goldenrod;
+    border-radius: 0.5rem;
+}
+
+.main__form__fondo__side img {
+    border-radius: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 .form-btn {
@@ -421,19 +421,6 @@ hr {
     border-color: goldenrod;
     color: rgba(128, 0, 64, 1);
     transition: 0.3s;
-}
-
-.fondoForm__side__p {
-    color: goldenrod;
-    padding: 2.5rem 2.5rem;
-    font-weight: bold;
-    border: solid 1px goldenrod;
-    border-radius: 0.5rem;
-}
-
-.fondoForm__side img {
-    border-radius: 1.5rem;
-    margin-top: 1.5rem;
 }
 
 /* Inicio FOOTER */
@@ -454,7 +441,7 @@ hr {
     margin-bottom: 0;
 }
 
-.socials {
+.footer__socials {
     display: flex;
     list-style: none;
     align-items: center;
@@ -462,18 +449,18 @@ hr {
     margin-bottom: 0.2rem;
     padding: 0;
   }
-  .socials li {
+  .footer__socials li {
     margin: 0 10px;
   }
-  .socials a i {
+  .footer__socials a i {
     font-size: 1.1rem;
     color: goldenrod;
   }
-  .socials a:hover i{
+  .footer__socials a:hover i{
     font-size: 1.5rem;
     transition: color .4s ease;
   }
-  .socials a:hover i{
+  .footer__socials a:hover i{
     color: rgba(128, 0, 64, 1);
   }
 
