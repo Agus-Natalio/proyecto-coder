@@ -569,11 +569,11 @@ hr {
         height: 12rem;
     }
 
-    .accordion-item {
+    .main__pjs__acordeon__cont {
         margin: 0 0.5rem;
     }
 
-    .accordion-button p {
+    .main__pjs__acordeon__cont__btn p {
         font-size: 2.8rem;
         padding-left: 1.5rem;
     }
@@ -635,11 +635,11 @@ hr {
         width: 22rem;
     }
 
-    .accordion img {
+    .main__pjs__acordeon img {
         width: 6.5rem;
     }
 
-    .accordion-button p {
+    .main__pjs__acordeon__cont__btn p {
         font-size: 2.5rem;
         padding-left: 1.5rem;
     }
@@ -705,11 +705,11 @@ hr {
         font-size: 1rem;
     }
 
-    .accordion img {
+    .main__pjs__acordeon img {
         width: 5.5rem;
     }
 
-    .accordion-button p {
+    .main__pjs__acordeon__cont__btn p {
         font-size: 1.8rem;
         padding-left: 1.5rem;
     }

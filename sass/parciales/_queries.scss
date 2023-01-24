@@ -1,0 +1,209 @@
+/****media-queries****/
+/*425px*/
+@media screen and (max-width: 425px) {
+    /***header***/
+    .btn {
+        margin: 2rem 0 0.5rem 0;
+    }
+    /***hero***/
+    .main__hero {
+        padding-top: 0;
+        &__frente {
+            width: 22rem;
+        }
+        &__sinopsis {
+            display: flex;
+            margin: 1rem 1rem;
+        }
+        &__principales {
+            padding-top: 0.5rem;
+            font-size: 1.5rem;
+            margin: 0 2rem;
+            border-radius: 2rem;
+            border-style: ridge;
+            border-color: goldenrod;
+            &__tokens {
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows:auto;
+                gap: 0;
+                padding: 1rem 0;
+                & h1 {
+                    margin-bottom: 0;
+                }
+                & img {
+                    width: 90%;
+                    padding: 0.5rem 0;
+                }
+                & p {
+                    margin: 0 0.5rem;
+                }
+            }
+        }
+    }
+    /***mapa***/
+    .main__mapa {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & img {
+            align-items: center;
+            width: 25rem;
+            margin: 0;
+        }
+        & h1 {
+            margin: 0.5rem 7rem;
+            padding: 0.2rem 0;
+            border-radius: 0.8rem;
+        }
+    }
+    hr {
+        display: none;
+    }  
+    /***side***/
+    .main__side {
+        margin: 0;
+        &__hero h1 {
+            font-size: 2.1rem;
+        }
+        &__hero__container {
+            padding: 1rem;
+        }
+        &__hero__img {
+            width: 15rem;
+            height: 12rem;
+        }
+        &__hero__racecont__img {
+            width: 24rem;
+            border-radius: 1rem;
+        }
+        &__hero__racecont p {
+            padding: 0.5rem 1rem;     
+        }
+    }
+
+    /***pjs***/
+    .main__pjs__acordeon__cont {
+        margin: 0 0.5rem;
+        &__btn p {
+            font-size: 2.8rem;
+            padding-left: 1.5rem;
+        }
+    }
+    /***races***/
+    .races__carrusel {
+        margin: 0;
+        width: 26.6rem;
+    }
+    /***faction***/
+    .main__faction {
+        margin: 0;
+        &__hero {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            &__content {
+                padding: 0;
+            }
+        }
+    }
+}
+
+/*375px*/
+@media screen and (max-width: 375px) {
+    /***hero***/
+    .main__hero__principales {
+        margin: 0 0.8rem;
+        border-radius: 1.5rem;
+        &__tokens img {
+            width: 75%;
+        }
+    }
+    /***mapa***/
+    .main__mapa img {
+        width: 22rem;
+    }
+    /***pjs***/
+    .main__pjs__acordeon img {
+        width: 6.5rem;
+    }
+    .main__pjs__acordeon__cont__btn p {
+        font-size: 2.5rem;
+        padding-left: 1.5rem;
+    }
+    /***side***/
+    .main__side__hero__racecont__img {
+        width: 21.5rem;
+    }
+    /***races***/
+    .races__carrusel {
+        width: 23.45rem;
+    }
+    /***faction***/
+    .main__faction__hero__content img {
+        width: 18rem;
+        height: 12rem;
+    }
+}
+/*320px*/
+@media screen and (max-width: 320px) {
+    /***hero***/
+    .main__hero__frente {
+        width: 19.5rem;
+    }
+    .main__hero__principales {
+        border-radius: 1rem;
+        &__tokens {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+            & img {
+                width: 70%;
+            }
+            & p {
+                margin: 0 1.5rem;
+            }
+        }
+    }
+    /***mapa***/
+    .main__mapa h1 {
+        margin: 0.5rem 1.5rem;
+        font-size: 1.5rem;
+    }
+    .main__mapa img {
+        width: 19.5rem;
+    }
+    /***side***/
+    .main__side__hero__img {
+        float: none;
+        width: 17rem;
+    }
+    .main__side__hero p {
+        padding-top: 1rem;
+        padding-right: 0;
+        font-size: 1rem;
+    }
+    .main__side__hero__racecont__img {
+        width: 18rem;
+        border-radius: 0.7rem;
+    }
+    /***pjs***/
+    .main__pjs__acordeon img {
+        width: 5.5rem;
+    }
+    .main__pjs__acordeon__cont__btn p {
+        font-size: 1.8rem;
+        padding-left: 1.5rem;
+    }
+    /***races***/
+    .races__carrusel {
+        width: 20rem;
+    }
+    /***faction***/
+    .main__faction__hero__content img {
+        width: 16rem;
+        height: 10rem;
+    }
+}
+
+
