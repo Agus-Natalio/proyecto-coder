@@ -468,6 +468,55 @@ hr {
     position: center;
 }
 
+/* MEDIA QUERIES (ESTILOS MOVILES) HASTA 1440px */
+
+@media screen and (max-width: 1440px) {
+    /*HEADER*/
+
+    .header__nav__cont {
+        padding-left: 1rem;
+    }
+
+    .btn {
+        margin-left: 4rem;  
+    }
+
+    /*FIN HEADER*/
+
+    /*MAIN*/
+    .main__hero__sinopsis {
+        margin: 1rem 10rem;
+    }
+
+    .main__hero__principales__tokens__img {
+        width: 93%;
+    }
+
+    .main__side__hero__container {
+        padding: 1rem 5rem;
+    }
+
+    .main__pjs__acordeon__cont {
+        margin: 0 6rem;
+    }
+
+    .main__side__hero__racecont__img {
+        width: 52rem;
+    }
+
+    .main__side__hero__racecont p {
+        padding: 1rem 5rem;
+    }
+
+    .races__carrusel {
+        width: 50rem;
+    }
+
+    .main__faction__hero__content {
+        padding: 0 2rem;
+    }
+}
+
 /* MEDIA QUERIES (ESTILOS MOVILES) HASTA 425px */
 
 @media screen and (max-width: 425px) {
