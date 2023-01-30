@@ -333,6 +333,35 @@ hr {
     position: center; }
 
 /****media-queries****/
+/*1440px*/
+@media screen and (max-width: 1440px) {
+  /***header***/
+  .header__nav__cont {
+    padding-left: 1rem; }
+  .btn {
+    margin-left: 4rem; }
+  /***hero***/
+  .main__hero__sinopsis {
+    margin: 1rem 10rem; }
+  .main__hero__principales__tokens__img {
+    width: 93%; }
+  .main__side__hero__container {
+    padding: 1rem 5rem; }
+  /***side***/
+  .main__side__hero__racecont__img {
+    width: 52rem; }
+  .main__side__hero__racecont p {
+    padding: 1rem 5rem; }
+  /***pjs***/
+  .main__pjs__acordeon__cont {
+    margin: 0 6rem; }
+  /***races***/
+  .races__carrusel {
+    width: 50rem; }
+  /***faction***/
+  .main__faction__hero__content {
+    padding: 0 2rem; } }
+
 /*425px*/
 @media screen and (max-width: 425px) {
   /***header***/
