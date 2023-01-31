@@ -199,15 +199,22 @@
             }
             &__side img {
                 margin-top: 3.5rem;
-                height: 7.52rem;
+                width: 30rem;
+                margin: 1rem 2.95rem;
             }
         }
     }
     .form-btn {
-        padding: 0.5rem 4.5rem;
+        padding: 0.5rem 8rem;
     }
     .col-6 {
         width: 90%;
+    }
+    .mb-3 {
+        padding-right: 12rem;
+    }
+    .mb-5 {
+        padding-right: 8rem;
     }
 }
 /*425px*/
@@ -322,6 +329,18 @@
     .main__form {
         padding: 1rem;
         margin: 0;
+        &__fondo__side img {
+            margin: 1rem 0;
+        }
+    }
+    .mb-3 {
+        padding-right: 0;
+    }
+    .mb-5 {
+        padding-right: 0;
+    }
+    .form-btn {
+        padding: 0.5rem 3.5rem;
     }
 }
 
