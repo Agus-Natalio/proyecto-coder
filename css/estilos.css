@@ -361,8 +361,10 @@ hr {
 
 .main__form {
     margin: 0 10rem;
-    padding: 2.25rem 6rem 2.25rem 6rem;
+    padding: 2.25rem 6rem;
     background-color: rgba(90, 90, 90, 0.9);
+    align-content: center;
+    justify-content: center;
 }
 
 .p-5 {
@@ -393,12 +395,18 @@ hr {
     font-weight: bolder;
 }
 
+.main__form__fondo p{
+    margin-bottom:0 ;
+}
+
 .main__form__fondo__side__p {
     color: goldenrod;
     padding: 2.5rem 2.5rem;
     font-weight: bold;
+    font-size: 1.05rem;
     border: solid 1px goldenrod;
     border-radius: 0.5rem;
+    text-align: center;
 }
 
 .main__form__fondo__side img {
@@ -515,6 +523,210 @@ hr {
     .main__faction__hero__content {
         padding: 0 2rem;
     }
+
+    .main__form {
+        margin: 0 5rem;
+        padding: 2.25rem 4rem;
+    }
+
+    .form-btn {
+        padding: 0.5rem 8.5rem;
+    }
+    /*FIN MAIN*/
+}
+
+/*MEDIA QUERIES (ESTILOS MOVILES) HASTA 1024px */
+
+@media screen and (max-width: 1024px) {
+    /*HEADER*/
+    .btn {
+        margin: 0 1rem 0 3rem;
+    }
+
+    .header__nav__cont__link {
+        font-size: 1.1rem;
+    }
+    /*FIN HEADER*/
+
+    /*MAIN*/
+    .main__hero__frente {
+        width: 27.5rem;
+    }
+
+    .main__hero__sinopsis {
+        font-size: 1.05rem;
+    }
+
+    .main__hero__principales__tokens {
+        gap: 3rem;
+        padding: 0 0.5rem;
+    }
+
+    .main__mapa__img {
+        width: 45rem;
+    }
+
+    .main__side {
+        margin: 0 8rem;
+    }
+
+    .main__side__hero__container {
+        padding: 0.25rem 2rem;
+    }
+
+    .main__pjs__acordeon__cont {
+        margin: 0 2rem;
+    }
+
+    .main__side__hero__racecont__img {
+        width: 42rem;
+    }
+
+    .main__side__hero__racecont p {
+        padding: 1rem 3.2rem;
+    }
+
+    .races__carrusel {
+        width: 40rem;
+        background-size: cover;
+        margin: 1rem 6rem 0 4.5rem;
+    }
+
+    .main__faction {
+        margin: 0 6.5rem;
+    }
+
+    .main__faction__hero {
+        padding: 0 1rem;
+    }
+
+    .main__faction__hero__content {
+        padding: 0;
+    }
+
+    .p-5 {
+        padding: 2rem!important;
+    }
+
+    .main__form {
+        margin: 0 3rem;
+        padding: 1.55rem 0rem;
+    }
+    
+    .main__form__fondo {
+        margin: 0 1.5rem;
+    }
+
+    .main__form__fondo__side img {
+        margin-top: 2rem;
+    }
+
+    .main__form__fondo__side__p {
+        padding: 2.1rem;
+        text-align: center;
+    }
+
+    .form-btn {
+        padding: 0.5rem 7.5rem;
+    }
+    /*FIN MAIN*/
+}
+
+/* MEDIA QUERIES (ESTILOS MOVILES) HASTA 768px */
+
+@media screen and (max-width: 768px) {
+    /*HEADER*/
+    .btn {
+        margin: 2.5rem 0 1rem 0;
+    }
+
+    .header__nav__cont__link {
+        font-size: 1.25rem;
+    }
+    /*FIN HEADER*/
+
+    /*MAIN*/
+    .main__hero__sinopsis {
+        margin: 1rem 5rem;
+    }
+
+    .main__hero__principales__tokens {
+        gap: 1rem;
+    }
+
+    .main__hero__principales__tokens__img {
+        width: 8rem;
+    }
+
+    .main__mapa__img {
+        width: 40rem;
+    }
+
+    .main__side {
+        margin: 0 2.5rem;
+    }
+
+    .main__side__hero p {
+        font-size: 1.05rem;
+    }
+
+    .main__side__hero__img {
+        width: 21.5rem;
+    }
+
+    .main__side__hero__racecont__img {
+        width: 35rem;
+    }
+
+    .races__carrusel {
+        width: 37rem;
+        background-size: cover;
+        margin: 1rem 0 0 3rem;
+    }
+
+    .main__faction {
+        margin: 0 2.5rem;
+    }
+
+    .main__faction__hero {
+        padding: 0;
+    }
+
+    .main__faction__hero__content img {
+        width: 17rem;
+    }
+
+    .main__faction__hero__content p {
+        font-size: 1rem;
+        padding: 0 1.05rem;
+    }
+
+    .main__form {
+        margin: 0 2.5rem;
+        padding: 0.58rem 0;;
+    }
+
+    .main__form__fondo {
+        margin: 1rem;
+    }
+
+    .main__form__fondo__side__p {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .main__form__fondo__side img {
+        margin-top: 3.5rem;
+        height: 7.52rem;
+    }
+
+    .form-btn {
+        padding: 0.5rem 4.5rem;
+    }
+
+    .col-6 {
+        width: 90%;
+    }
 }
 
 /* MEDIA QUERIES (ESTILOS MOVILES) HASTA 425px */
@@ -623,7 +835,7 @@ hr {
     }
 
     .main__pjs__acordeon__cont__btn p {
-        font-size: 2.8rem;
+        font-size: 1.75rem;
         padding-left: 1.5rem;
     }
 
@@ -658,10 +870,8 @@ hr {
         padding: 0;
     }
 
-    /*No me toma este media querie, tengo que revisar*/
     .main__form {
         padding: 1rem;
-        background-color: white;
         margin: 0;
     }
     /*Fin MAIN*/
@@ -689,7 +899,7 @@ hr {
     }
 
     .main__pjs__acordeon__cont__btn p {
-        font-size: 2.5rem;
+        font-size: 1.55rem;
         padding-left: 1.5rem;
     }
 
@@ -759,7 +969,7 @@ hr {
     }
 
     .main__pjs__acordeon__cont__btn p {
-        font-size: 1.8rem;
+        font-size: 1.25rem;
         padding-left: 1.5rem;
     }
 
@@ -777,6 +987,10 @@ hr {
         height: 10rem;
     }
       /*FIN MAIN*/
+      /*FOOTER*/
+    .footer p {
+        padding: 0 0.5rem;
+    }
 }
 
     /* KEYFRAMES */
