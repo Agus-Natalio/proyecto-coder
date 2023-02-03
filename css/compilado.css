@@ -137,7 +137,6 @@ hr {
 
 /****side****/
 .main__side {
-  overflow-x: hidden;
   background-color: rgba(0, 0, 0, 0.8);
   margin: 0 10rem; }
   .main__side__hero__container {
@@ -581,7 +580,7 @@ hr {
   /***races***/
   .races__carrusel {
     margin: 0;
-    width: 26.6rem; }
+    width: 26.54rem; }
   /***faction***/
   .main__faction {
     margin: 0; }
